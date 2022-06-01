@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-6 m-auto">
+      <div class="flat-form">
+        <h1>Edit flat</h1>
+        <div class="mt-3">
+          <form class="edit_flat" id="edit_flat_6249" action="/flats/6249" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="TzPdv45yA3drij67abCbFey1qgGMS/KXApHtNmgQQ/vQWMQOnJ6tuSccHOPzZGxZQ3be6bzJUdOiukpP2Ur71A==">
+            <div class="mb-3">
+              <label class="form-label" for="flat_name">Name</label>
+              <input class="form-control" type="text" value="<%=@flat.name%>" name="flat[name]" id="flat_name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="flat_address">Address</label>
+              <input class="form-control" type="text" value="<%=@flat.address%>" name="flat[address]" id="flat_address">
+            </div>
+              <div class="mb-3">
+              <label class="form-label" for="flat_picture_url">Picture url</label>
+              <input class="form-control" type="text" value="<%=@flat.photo%>" name="flat[picture_url]" id="flat_picture_url">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="flat_description">Description</label>
+              <textarea class="form-control" name="flat[address]" id="flat_address"><%=@flat.description%></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="flat_number_of_guests">Number of guests</label>
+              <input class="form-control" type="number" value="<%= @flat.number_of_guests %>" name="flat[number_of_guests]" id="flat_number_of_guests">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="flat_price_per_night">Price per night</label>
+              <input class="form-control" type="number" value="<%= @flat.price_per_night %>" name="flat[price_per_night]" id="flat_price_per_night">
+            </div>
+            <div class="mt-3">
+              <input type="submit" name="commit" value="Update Flat" class="btn btn-primary" data-disable-with="Update Flat">
+              <a class="btn btn-danger ms-2" href="#">Cancel</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
